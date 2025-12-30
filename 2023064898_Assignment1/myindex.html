@@ -1,0 +1,70 @@
+<!--2023064898 - Buhle Bidi - Assignment 1--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Daily Boost</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Additional inline styles for profile photo */
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            object-fit:fill;
+            border-radius: 10%;
+            border: 5px solid #2c3e50;
+            box-shadow: 0 9px 8px rgba(0,0,0,0.1);
+            display: block;
+            margin: 0 auto 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .profile-photo {
+                width: 300px;
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="myindex.html">👤 My Profile</a></li>
+                <li><a href="resources.html">📚 Resources</a></li>
+                <li><a href="about.html">ℹ️ About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <header>
+            <h1>My Student Profile</h1>
+        </header>
+
+        <section class="profile-section">
+            <img src="images/student.jpg" alt="My Photo" class="profile-photo">
+            
+            <div class="profile-info">
+                <h2>Buhle Bidi</h2>
+                <p><strong>Student Number:</strong> 2023064898</p>
+                <p><strong>Course:</strong> CSIQ2654</p>
+                <p><strong>University:</strong>University of The Free State</p>
+                
+                <h3>About Me</h3>
+                <p>I'm passionate about student success and creating tools that help learners achieve their full potential.</p>
+                
+                <h3>Contact</h3>
+                <form class="contact-form">
+                    <label for="message">Leave me a message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
